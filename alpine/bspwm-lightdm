@@ -12,10 +12,10 @@ touch ~/.config/sxhkd/sxhkdrc
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/bspwmrc > ~/.config/bspwm/bspwmrc
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/sxhkdrc > ~/.config/sxhkd/sxhkdrc
 # wallpapers
-curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper.jpg > ~/.config/bspwm/wallpaper.jpg
-curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-1.jpg > ~/.config/bspwm/wallpaper-1.jpg
-curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-2.jpg > ~/.config/bspwm/wallpaper-2.jpg
-curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-3.jpg > ~/.config/bspwm/wallpaper-3.jpg
-curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-4.jpg > ~/.config/bspwm/wallpaper-4.jpg
+curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper.jpg?raw=true > ~/.config/bspwm/wallpaper.jpg
+curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-1.jpg?raw=true > ~/.config/bspwm/wallpaper-1.jpg
+curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-2.jpg?raw=true > ~/.config/bspwm/wallpaper-2.jpg
+curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-3.jpg?raw=true > ~/.config/bspwm/wallpaper-3.jpg
+curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-4.jpg?raw=true > ~/.config/bspwm/wallpaper-4.jpg
 # starting lightdm
 rc-service lightdm start
