@@ -33,7 +33,7 @@ curl https://raw.githubusercontent.com/demondave/scripts/main/config/Xresources 
 
 #.xinitrc
 rm ~/.xinitrc
-curl https://raw.githubusercontent.com/demondave/scripts/main/config/xinirc > ~/.xinitrc
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/xinitrc > ~/.xinitrc
 
 # wallpapers
 echo Downloading wallpapers
