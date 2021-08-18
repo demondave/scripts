@@ -13,6 +13,7 @@ mkdir ~/.config/picom
 echo Creating bspwmrc config file
 rm ~/.config/bspwm/bspwmrc
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/bspwmrc > ~/.config/bspwm/bspwmrc
+chmod +x ~/.config/bspwm/bspwmrc
 echo Creating sxhkdrc config file
 rm ~/.config/sxhkd/sxhkdrc
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/sxhkdrc > ~/.config/sxhkd/sxhkdrc
