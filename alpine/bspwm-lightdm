@@ -2,20 +2,27 @@
 echo bspwm setup script with lightdm
 sudo apk add bspwm sxhkd lightdm-gtk-greeter xterm feh
 # Creates main config directory
+echo Creating config directory
 mkdir ~/.config
 # Creates subdirectories
+echo Creating bspwm, sxhkd, picom subdirectories
 mkdir ~/.config/bspwm
 mkdir ~/.config/sxhkd
 mkdir ~/.config/picom
 # Creates config files
+echo Creating bspwmrc config file
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/bspwmrc > ~/.config/bspwm/bspwmrc
+ehco Creating sxhkdrc config file
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/sxhkdrc > ~/.config/sxhkd/sxhkdrc
+echo Creating picom.conf config file
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/picom.conf > ~/.config/picom/picom.conf
 # wallpapers
-wget https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper.jpg?raw=true > ~/.config/bspwm/wallpaper.jpg
-wget https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-1.jpg?raw=true > ~/.config/bspwm/wallpaper-1.jpg
-wget https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-2.jpg?raw=true > ~/.config/bspwm/wallpaper-2.jpg
-wget https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-3.jpg?raw=true > ~/.config/bspwm/wallpaper-3.jpg
-wget https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-4.jpg?raw=true > ~/.config/bspwm/wallpaper-4.jpg
+echo Downloading wallpapers
+curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper.jpg?raw=true > ~/.config/bspwm/wallpaper.jpg
+curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-1.jpg?raw=true > ~/.config/bspwm/wallpaper-1.jpg
+curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-2.jpg?raw=true > ~/.config/bspwm/wallpaper-2.jpg
+curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-3.jpg?raw=true > ~/.config/bspwm/wallpaper-3.jpg
+curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-4.jpg?raw=true > ~/.config/bspwm/wallpaper-4.jpg
 # starting lightdm
+echo Starting lightdm
 rc-service lightdm start
