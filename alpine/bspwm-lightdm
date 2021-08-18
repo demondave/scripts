@@ -11,17 +11,25 @@ mkdir ~/.config/sxhkd
 mkdir ~/.config/picom
 # Creates config files
 echo Creating bspwmrc config file
+rm ~/.config/bspwm/bspwmrc
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/bspwmrc > ~/.config/bspwm/bspwmrc
-ehco Creating sxhkdrc config file
+echo Creating sxhkdrc config file
+rm ~/.config/sxhkd/sxhkdrc
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/sxhkdrc > ~/.config/sxhkd/sxhkdrc
 echo Creating picom.conf config file
+rm ~/.config/picom/picom.conf
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/picom.conf > ~/.config/picom/picom.conf
 # wallpapers
 echo Downloading wallpapers
+rm ~/.config/bspwm/wallpaper.jpg
 curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper.jpg?raw=true > ~/.config/bspwm/wallpaper.jpg
+rm ~/.config/bspwm/wallpaper-1.jpg
 curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-1.jpg?raw=true > ~/.config/bspwm/wallpaper-1.jpg
+rm ~/.config/bspwm/wallpaper-2.jpg
 curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-2.jpg?raw=true > ~/.config/bspwm/wallpaper-2.jpg
+rm ~/.config/bspwm/wallpaper-3.jpg
 curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-3.jpg?raw=true > ~/.config/bspwm/wallpaper-3.jpg
+rm ~/.config/bspwm/wallpaper-4.jpg
 curl https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-4.jpg?raw=true > ~/.config/bspwm/wallpaper-4.jpg
 # starting lightdm
 echo Starting lightdm
