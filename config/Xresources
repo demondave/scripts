@@ -37,10 +37,10 @@
 *.color15:      #f7f7f7
 
 !! URxvt Appearance
-URxvt.font: Fira Code Regular:size=20
-URxvt.boldFont: Fira Code Regular:size=20
-URxvt.italicFont: Fira Code Regular:size=20
-URxvt.boldItalicfont: Fira Code Regular:size=20
+URxvt.font: xft:Fira Code Regular:size=20
+URxvt.boldFont: xft:Fira Code Regular:size=20
+URxvt.italicFont: xft:Fira Code Regular:size=20
+URxvt.boldItalicfont: xft:Fira Code Regular:size=20
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 URxvt.geometry: 92x24
