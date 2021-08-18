@@ -1,1 +1,3 @@
-
+echo Downloading scripts
+curl https://raw.githubusercontent.com/demondave/scripts/main/alpine/bspwm-lightdm > ~\bspwm-lightdm
+chmod +x ~\bspwm-lightdm
