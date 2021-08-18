@@ -6,11 +6,11 @@ mkdir ~/.config
 # Creates subdirectories
 mkdir ~/.config/bspwm
 mkdir ~/.config/sxhkd
+mkdir ~/.config/picom
 # Creates config files
-touch ~/.config/bspwm/bspwmrc
-touch ~/.config/sxhkd/sxhkdrc
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/bspwmrc > ~/.config/bspwm/bspwmrc
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/sxhkdrc > ~/.config/sxhkd/sxhkdrc
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/picom.conf > ~/.config/picom/picom.conf
 # wallpapers
 wget https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper.jpg?raw=true > ~/.config/bspwm/wallpaper.jpg
 wget https://github.com/demondave/scripts/blob/8c502116b1eb508cbf51c04ea7ed8d695d65ab05/assets/wallpaper-1.jpg?raw=true > ~/.config/bspwm/wallpaper-1.jpg
