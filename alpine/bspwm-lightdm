@@ -1,6 +1,6 @@
 #!/bin/bash
 echo bspwm setup script with lightdm
-sudo apk add bspwm sxhkd lightdm-gtk-greeter xterm feh
+sudo apk add bspwm sxhkd lightdm-gtk-greeter xterm feh picom
 # Creates main config directory
 echo Creating config directory
 mkdir ~/.config
@@ -20,6 +20,8 @@ curl https://raw.githubusercontent.com/demondave/scripts/main/config/sxhkdrc > ~
 echo Creating picom.conf config file
 rm ~/.config/picom/picom.conf
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/picom.conf > ~/.config/picom/picom.conf
+rm ~/.config/picom/.Xresources
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/Xresources > ~/.Xresources
 # wallpapers
 echo Downloading wallpapers
 rm ~/.config/bspwm/wallpaper.jpg
