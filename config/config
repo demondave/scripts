@@ -1,4 +1,5 @@
 [bar/mybar]
+font-0 = "Fira Code Regular:size=16"
 modules-right = date
 
 [module/date]
