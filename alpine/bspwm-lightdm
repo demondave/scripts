@@ -1,15 +1,22 @@
 #!/bin/bash
 echo bspwm setup script with lightdm
-sudo apk add bspwm sxhkd lightdm-gtk-greeter rxvt-unicode feh picom setxkbmap font-fira-code libva-glx rofi
+sudo apk add bspwm sxhkd lightdm-gtk-greeter rxvt-unicode feh picom setxkbmap font-fira-code libva-glx rofi polybar
 # Creates main config directory
 echo Creating config directory
 mkdir ~/.config
 # Creates subdirectories
-echo Creating bspwm, sxhkd, picom subdirectories
+echo Creating bspwm, sxhkd, picom and polybar subdirectories
 mkdir ~/.config/bspwm
 mkdir ~/.config/sxhkd
 mkdir ~/.config/picom
+mkdir ~/.config/polybar
 # Creates config files
+
+#polybar
+echo Creating polybar files
+rm ~/.config/polybar/launch.sh
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/launch.sh > ~/.config/polybar/launch.sh
+chmod +x ~/.config/polybar/launch.sh
 
 #bspwmrc
 echo Creating bspwmrc config file
