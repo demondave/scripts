@@ -22,7 +22,7 @@ rm ~/.config/polybar/launch.sh
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/launch.sh > ~/.config/polybar/launch.sh
 chmod +x ~/.config/polybar/launch.sh
 rm ~/.config/polybar/config
-curl curl https://raw.githubusercontent.com/demondave/scripts/main/config/config > ~/.config/polybar/config
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/config > ~/.config/polybar/config
 
 #bspwmrc
 echo Creating bspwmrc config file
