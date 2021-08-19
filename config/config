@@ -1,6 +1,6 @@
 [bar/mybar]
 font-0 = "Fira Code Regular:size=16"
-modules-right = date
+modules-right = battery,date
 
 [module/date]
 type = internal/date
@@ -20,3 +20,25 @@ time = %H:%M
 ; the module will toggle between formats
 date-alt = %A, %d %B %Y
 time-alt = %H:%M:%S
+
+[module/battery]
+type = internal/battery
+
+; This is useful in case the battery never reports 100% charge
+full-at = 99
+
+; Use the following command to list batteries and adapters:
+; $ ls -1 /sys/class/power_supply/
+battery = BAT0
+adapter = ADP1
+
+; If an inotify event haven't been reported in this many
+; seconds, manually poll for new values.
+;
+; Needed as a fallback for systems that don't report events
+; on sysfs/procfs.
+;
+; Disable polling by setting the interval to 0.
+;
+; Default: 5
+poll-interval = 5
