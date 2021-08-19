@@ -12,6 +12,10 @@ mkdir ~/.config/picom
 mkdir ~/.config/polybar
 # Creates config files
 
+#lightdm-gtk-greeter
+echo Configuring lightdm-gtk-greeter
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/lightdm-gtk-greeter.conf > /etc/lightdm/lightdm-gtk-greeter.conf
+
 #polybar
 echo Creating polybar files
 rm ~/.config/polybar/launch.sh
