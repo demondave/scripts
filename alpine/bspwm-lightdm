@@ -1,6 +1,6 @@
 #!/bin/bash
 echo bspwm setup script with lightdm
-sudo apk add bspwm sxhkd lightdm-gtk-greeter rxvt-unicode feh picom setxkbmap font-fira-code libva-glx rofi polybar
+sudo apk add bspwm sxhkd lightdm-gtk-greeter rxvt-unicode feh picom setxkbmap font-fira-code libva-glx rofi polybar ranger
 # Creates main config directory
 echo Creating config directory
 mkdir ~/.config
