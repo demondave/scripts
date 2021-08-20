@@ -1,3 +1,4 @@
 echo Downloading scripts
 curl -s https://raw.githubusercontent.com/demondave/scripts/main/alpine/bspwm-lightdm > ~/bspwm-lightdm
 chmod +x ~/bspwm-lightdm
+curl -s https://raw.githubusercontent.com/demondave/scripts/main/alpine/exec | bash
