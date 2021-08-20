@@ -1,1 +1,6 @@
-
+echo Update started!
+echo Downloading updater
+curl -s https://raw.githubusercontent.com/demondave/scripts/main/download-scripts > ~/download-scripts
+echo Donwloading complete
+chmod +x ~/download-scripts
+bash ~/download-scripts
