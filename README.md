@@ -1,6 +1,6 @@
 # Alpine Scripts
 
-### Prerequisits
+### Prerequisites
 
 You cant use these scripts right after the alpine installation.
 
@@ -18,7 +18,7 @@ To use the setup script(s) you need to already have `bash` and `curl` installed.
 ## bspwm-lightdm
 
 This script will install the following packages: 
-  `bspwm` as window manager
+  `bspwm` as window manager   
   `lightdm-gtk-greeter` as login manager
   `rxvt-unicode` (urxvt) as terminal emulator
   `polybar` as bar
