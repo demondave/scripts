@@ -1,5 +1,13 @@
 # Alpine Scripts
 
+### About this Repository
+
+This repository contains some script to rice alpine linux.
+
+# What these scripts will do
+
+The `bspwm-lightdm` script will completly set up `bspwm` and `lightdm`.
+
 ### Prerequisites
 
 You cant use these scripts right after the alpine installation.
@@ -11,7 +19,7 @@ You cant use these scripts right after the alpine installation.
 
 To use the setup script(s) you need to already have `bash` and `curl` installed.
 
-1. Download the `download-scripts`script with    
+1. Download the `download-scripts` script with    
    `curl https://raw.githubusercontent.com/demondave/scripts/main/download-scripts > download-scripts`
 2. Now use `bash download-scripts` to download the other setup scripts.
 3. The script will now download the `bspwm-lightdm` script.
@@ -29,7 +37,7 @@ This script will install the following packages:
   
 ### Post Installation
 
-To start **LightDM** execute `rc-service lightdm start` 
+To start **LightDM** execute `rc-service lightdm start`
 
 You now can open a terminal with **Windows-Key** + **Return**
 
