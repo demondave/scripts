@@ -11,7 +11,7 @@ You cant use these scripts right after the alpine installation.
 
 To use the setup script(s) you need to already have `bash` and `curl` installed.
 
-1. Download the `download-scripts`script with `curl https://raw.githubusercontent.com/demondave/scripts/main/download-scripts > download-scripts`
+1. Download the `download-scripts`script with    `curl https://raw.githubusercontent.com/demondave/scripts/main/download-scripts > download-scripts`
 2. Now use `bash download-scripts` to download the other setup scripts.
 3. The script will now download the `bspwm-lightdm` script.
 
