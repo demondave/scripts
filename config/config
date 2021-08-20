@@ -76,9 +76,9 @@ modules-center = mpd
 
 [bar/tray]
 inherit = bar/base
-width = 9%
+width = 12.5%
 
-offset-x = 90.5%
+offset-x = 68.80%
 
 modules-left = pulseaudio time 
 
