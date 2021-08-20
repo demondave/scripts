@@ -1,5 +1,7 @@
 # Alpine Scripts
 
-### About this repository
+### Prerequisits
+
+To use the setup script(s) you need to already have `bash` and `curl` installed.
 
 
