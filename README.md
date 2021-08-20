@@ -15,7 +15,7 @@ To use the setup script(s) you need to already have `bash` and `curl` installed.
 2. Now use `bash download-scripts` to download the other setup scripts.
 3. The script will now download the `bspwm-lightdm` script.
 
-## bspwm-lightdm
+# bspwm-lightdm
 
 This script will install the following packages:   
   `bspwm` as window manager   
@@ -24,7 +24,19 @@ This script will install the following packages:
   `polybar` as bar   
   `picom` as composer   
   `feh` for desktop wallpapers   
-  and some other packages which you can find in the `bspwm-lightdm` script.   
+  and some other packages which you can find in the `bspwm-lightdm` script. 
+  
+### Post Installation
+
+To start **LightDM** execute `rc-service lightdm start` 
+
+You now can open a terminal with **Windows-Key** + **Return**
+
+**Warning: The Xorg keyboard layout is set to german by default**  
+To change this go to your `~/.config/bspwm/bspwmrc` file and   
+change `setxkbmap -layout de` to your keyboard layout.
+
+If everything works you can now set **LightDM** to autostart with `rc-update add lightdm`
 
 
 
