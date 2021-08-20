@@ -39,6 +39,8 @@ curl https://raw.githubusercontent.com/demondave/scripts/main/config/sxhkdrc > ~
 echo Creating picom.conf config file
 rm ~/.config/picom/picom.conf
 curl https://raw.githubusercontent.com/demondave/scripts/main/config/picom.conf > ~/.config/picom/picom.conf
+rm ~/.config/picom/_picom.conf
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/_picom.conf > ~/.config/picom/_picom.conf
 
 #.Xresources
 rm ~/.Xresources
