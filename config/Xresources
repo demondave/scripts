@@ -37,6 +37,19 @@
 *.color15:      #f7f7f7
 
 !! URxvt Appearance
+
+! Fake Transparency
+URxvt*inheritPixmap: true
+URxvt*transparent: true
+URxvt*shading: 10
+
+! Compositor Transparency 
+! URxvt.depth: 32
+! URxvt.background: rgba:1111:1111:1111:dddd
+
+! Blur (laggy)
+! URxvt.blurRadius: 5
+
 URxvt.font: xft:Fira Code Regular:size=18:antialias=true
 URxvt.boldFont: xft:Fira Code Regular:size=18:antialias=true
 URxvt.italicFont: xft:Fira Code Regular:size=18:antialias=true
