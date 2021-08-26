@@ -64,4 +64,4 @@ rm ~/.config/bspwm/wallpaper-4.jpg
 curl -L https://raw.githubusercontent.com/demondave/scripts/main/assets/wallpaper-4.jpg?raw=true > ~/.config/bspwm/wallpaper-4.jpg
 # starting lightdm
 echo Starting lightdm
-rc-service lightdm start
+systemctl start lightdm 
