@@ -1,1 +1,67 @@
-a
+#!/bin/bash
+echo bspwm setup script with lightdm
+sudo pacman -S bspwm sxhkd lightdm-gtk-greeter rxvt-unicode feh picom setxkbmap ttf-fira-code rofi polybar htop
+# Creates main config directory
+echo Creating config directory
+mkdir ~/.config
+# Creates subdirectories
+echo Creating bspwm, sxhkd, picom and polybar subdirectories
+mkdir ~/.config/bspwm
+mkdir ~/.config/sxhkd
+mkdir ~/.config/picom
+mkdir ~/.config/polybar
+# Creates config files
+
+#lightdm-gtk-greeter
+echo Configuring lightdm-gtk-greeter
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/lightdm-gtk-greeter.conf > /etc/lightdm/lightdm-gtk-greeter.conf
+
+#polybar
+echo Creating polybar files
+rm ~/.config/polybar/launch.sh
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/launch.sh > ~/.config/polybar/launch.sh
+chmod +x ~/.config/polybar/launch.sh
+rm ~/.config/polybar/config
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/config > ~/.config/polybar/config
+
+#bspwmrc
+echo Creating bspwmrc config file
+rm ~/.config/bspwm/bspwmrc
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/bspwmrc > ~/.config/bspwm/bspwmrc
+chmod +x ~/.config/bspwm/bspwmrc
+
+#sxhkdrc
+echo Creating sxhkdrc config file
+rm ~/.config/sxhkd/sxhkdrc
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/sxhkdrc > ~/.config/sxhkd/sxhkdrc
+
+#picom.conf
+echo Creating picom.conf config file
+rm ~/.config/picom/picom.conf
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/picom.conf > ~/.config/picom/picom.conf
+rm ~/.config/picom/_picom.conf
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/_picom.conf > ~/.config/picom/_picom.conf
+
+#.Xresources
+rm ~/.Xresources
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/Xresources > ~/.Xresources
+
+#.xinitrc
+rm ~/.xinitrc
+curl https://raw.githubusercontent.com/demondave/scripts/main/config/xinitrc > ~/.xinitrc
+
+# wallpapers
+echo Downloading wallpapers
+rm ~/.config/bspwm/wallpaper.jpg
+curl -L https://raw.githubusercontent.com/demondave/scripts/main/assets/wallpaper.jpg?raw=true > ~/.config/bspwm/wallpaper.jpg
+rm ~/.config/bspwm/wallpaper-1.jpg
+curl -L https://raw.githubusercontent.com/demondave/scripts/main/assets/wallpaper-1.jpg?raw=true > ~/.config/bspwm/wallpaper-1.jpg
+rm ~/.config/bspwm/wallpaper-2.jpg
+curl -L https://raw.githubusercontent.com/demondave/scripts/main/assets/wallpaper-2.jpg?raw=true > ~/.config/bspwm/wallpaper-2.jpg
+rm ~/.config/bspwm/wallpaper-3.jpg
+curl -L https://raw.githubusercontent.com/demondave/scripts/main/assets/wallpaper-3.jpg?raw=true > ~/.config/bspwm/wallpaper-3.jpg
+rm ~/.config/bspwm/wallpaper-4.jpg
+curl -L https://raw.githubusercontent.com/demondave/scripts/main/assets/wallpaper-4.jpg?raw=true > ~/.config/bspwm/wallpaper-4.jpg
+# starting lightdm
+echo Starting lightdm
+rc-service lightdm start
